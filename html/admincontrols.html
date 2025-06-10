@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Control Panel</title>
+    <link rel="stylesheet" href="/DBMS MOVIE/CSS1/admin.css">
+</head>
+<body>
+
+    <header>
+        <h1>Admin Control Panel</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#addMovie">Add Movie</a></li>
+            <li><a href="#updateMovie">Update Movie</a></li>
+            <li><a href="#deleteMovie">Delete Movie</a></li>
+            <li><a href="#viewMovies">View All Movies</a></li>
+        </ul>
+    </nav>
+
+    <section id="addMovie">
+        <h2>Add New Movie</h2>
+        <form action="/DBMS MOVIE/add_movie.php" method="POST">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required><br>
+
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" name="genre" required><br>
+
+            <label for="year">Release Year:</label>
+            <input type="number" id="year" name="year" required><br>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea><br>
+
+            <input type="submit" value="Add Movie">
+        </form>
+    </section>
+
+    <section id="updateMovie">
+        <h2>Update Movie Information</h2>
+        <form action="/DBMS MOVIE/update_movie.php" method="POST">
+            <label for="title">Title of Movie to Update:</label>
+            <input type="text" id="title" name="title" required><br>
+
+            <label for="newTitle">New Title:</label>
+            <input type="text" id="newTitle" name="newTitle"><br>
+
+            <label for="newGenre">New Genre:</label>
+            <input type="text" id="newGenre" name="newGenre"><br>
+
+            <label for="newYear">New Release Year:</label>
+            <input type="number" id="newYear" name="newYear"><br>
+
+            <label for="newDescription">New Description:</label>
+            <textarea id="newDescription" name="newDescription"></textarea><br>
+
+            <input type="submit" value="Update Movie">
+        </form>
+    </section>
+
+    <section id="deleteMovie">
+        <h2>Delete Movie</h2>
+        <form action="DBMS MOVIE/delete_movie.php" method="POST">
+            <label for="title">Title of Movie to Delete:</label>
+            <input type="text" id="title" name="title" required><br>
+
+            <input type="submit" value="Delete Movie">
+        </form>
+    </section>
+
+    <section id="viewMovies">
+        <h2>View All Movies</h2>
+        <form action="/DBMS MOVIE/view_movies.php" method="GET">
+            <input type="submit" value="View Movies">
+        </form>
+
+        <!-- The movie list should be displayed here -->
+        <div id="movieList">
+            <!-- Dynamically generated movie list from the backend -->
+        </div>
+    </section>
+<p style="color: white;">Back to <a style="color: white; text-decoration: none;" href="/DBMS MOVIE/structureadmin.html">HOME</a></p> 
+</body>
+</html>

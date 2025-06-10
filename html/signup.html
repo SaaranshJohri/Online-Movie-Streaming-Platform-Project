@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="/PBL MOVIE2/CSS1/login.css">
+</head>
+<body>
+
+<!-- Signup Form Section -->
+<section class="book">
+    <h1>SIGN UP</h1>
+   
+</section>
+
+<!-- Signup Form -->
+<form id="signup-form" action="/PBL MOVIE2/signup.php" method="POST">
+    <input type="text" id="username" name="username" placeholder="Username" required><br>
+    <input type="email" id="email" name="email" placeholder="Email" required><br>
+    <input type="tel" id="phone" name="phone" placeholder="Phone" required maxlength="10" minlength="10"><br>
+    <input type="password" id="password" name="password" placeholder="Password" required><br>
+    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required><br>
+
+    <label for="Gender">Select Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br>
+
+    <label for="country">Select Country:</label><br>
+    <select id="country" name="country" required>
+        <option value="">Select your country</option>
+        <option value="india">India</option>
+        <option value="usa">United States</option>
+        <option value="uk">United Kingdom</option>
+        <option value="canada">Canada</option>
+        <option value="australia">Australia</option>
+    </select><br>
+    <a href="/PBL MOVIE2/login.html">
+    <input type="submit" value="Register"></a>
+</form>
+<p style="color:white">Already have an account? <a href="login.html">Login</a></p>
+</body>
+</html>

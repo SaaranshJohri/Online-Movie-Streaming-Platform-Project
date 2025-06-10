@@ -1,0 +1,105 @@
+body {
+    background-image: url('https://i.pinimg.com/564x/1c/95/29/1c9529e0d853747a15d86715f92a4c41.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    flex-direction: column;
+}
+
+.book {
+    background-color: rgba(0, 0, 0, 0); 
+    color: #faf9f9;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; 
+    position: relative;
+}
+
+.book h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #ffdd99;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px; 
+}
+
+#login-form, #signup-form {
+    background-color: rgba(255, 255, 255, 0.4); 
+    padding: 40px; 
+    border-radius: 15px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    width: 80%; 
+    max-width: 500px; 
+    margin-top: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#login-form:hover, #signup-form:hover {
+    transform: scale(1.03); 
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#login-form input[type="text"],
+#login-form input[type="email"],
+#login-form input[type="tel"],
+#login-form input[type="password"],
+#signup-form input[type="text"],
+#signup-form input[type="email"],
+#signup-form input[type="tel"],
+#signup-form input[type="password"],
+#login-form select, #signup-form select { 
+    width: 100%; 
+    padding: 12px; 
+    margin: 10px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    font-size: 16px; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#login-form input[type="submit"], #signup-form input[type="submit"] {
+    width: 100%; 
+    background-color: #c66d07; 
+    color: white; 
+    padding: 15px;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 18px; 
+    margin-top: 10px; 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#login-form input[type="submit"]:hover, #signup-form input[type="submit"]:hover {
+    background-color: black; 
+    transform: scale(1.05); 
+}
+
+/* Style for the toggle text below the form */
+.toggle-text {
+    margin-top: 20px; 
+    text-align: center; 
+    color: white;
+    font-size: 14px;
+}
+
+.toggle-text a {
+    color: #ffdd99; 
+    text-decoration: none;
+}
+
+.toggle-text a:hover {
+    text-decoration: underline; 
+}

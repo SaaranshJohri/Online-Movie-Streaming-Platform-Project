@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('bgi.jpg'); /* Apply gradient over image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: rgba(34, 34, 34, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    width: 350px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    color: #ffa500; /* Distinct color for title */
+    margin-bottom: 30px;
+    font-size: 32px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase; /* Make title uppercase for a bolder look */
+    font-weight: bold;
+}
+
+.input-box {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Different color for labels */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
+    transition: 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border: 2px solid #ff6600;
+    box-shadow: 0 0 8px rgba(255, 102, 0, 0.8); 
+    background-color: #444;
+}
+
+.submit-box {
+    margin-top: 20px;
+    text-align: center; /* Center the submit button container */
+}
+
+.sign-up {
+    width: 110px; /* Adjust the width as per your image */
+    height: 40px;  /* Adjust the height as per your image */
+    display: block; /* Make the button a block element */
+    margin: 0 auto; /* Center the button */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.sign-up:hover {
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+.sign-up:active {
+    transform: scale(0.95); /* Slightly shrinks on click */
+}
+.footer-text {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 12px;
+    opacity: 0.7;
+}
